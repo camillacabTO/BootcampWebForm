@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="header">
+            <h1 id="title">The Six Coding Bootcamp Syllabus Request Form</h1> 
+            <!-- fix this title word positioning -->
+            <p id="description">Become a Web Developer in 24 Weeks. Submit your information and get program info.</p>
+        </div>
+        <form id="survey-form" action="">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Enter your e-mail address" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age</label>
+                <input type="number" min="15" max="100" id="number" name="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label for="program-choice">Which program are you interested in:</label>
+                <select name="program-choice" id="dropdown">
+                    <option value="ios-development">iOs Development</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="database-admin">Database Administration</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Starting date:</p>
+                <div class="form-item">
+                    <input type="radio" name="starting-date" id="starting-date" value="september-2020"> September 2020
+                </div>
+                <div class="form-item">
+                    <input type="radio" name="starting-date" id="starting-date" value="january-2021"> January 2021
+                </div>
+                <div class="form-item"></div>
+                    <input type="radio" name="starting-date" id="starting-date" value="may-2021"> May 2021
+                </div>
+            </div>
+            <div class="form-group">
+                <p>What technologies are you interested in? </p>
+                <div class="form-item">
+                    <input type="checkbox" name="technologies" value="python"> Python
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" name="technologies" value="java"> Java
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" name="technologies" value="kotlin"> Kotlin
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" name="technologies" value="javaScript/node"> JavaScript/Node
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" name="technologies" value="swift"> Swift
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" name="technologies" value="docker"> Docker
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" name="technologies" value="api"> APIs
+                </div>
+                <div class="form-item">
+                    <input type="checkbox" name="technologies" value="reactjs"> ReactJS
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Anything else you would like to share?</p>
+                <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
