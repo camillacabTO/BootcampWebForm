@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>The Six Coding Bootcamp </title>
 </head>
 <body>
     <main>
@@ -13,7 +13,7 @@
             <!-- fix this title word positioning -->
             <p id="description">Become a Web Developer in 24 Weeks. Submit your information and get program info.</p>
         </div>
-        <form id="survey-form" action="">
+        <form>
             <div class="form-group">
                 <label for="name" id="name-label">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your full name" required>
@@ -24,54 +24,54 @@
             </div>
             <div class="form-group">
                 <label for="age" id="number-label">Age</label>
-                <input type="number" min="15" max="100" id="number" name="age" placeholder="Enter your age">
+                <input type="number" min="15" max="100" id="age" name="age" placeholder="Enter your age">
             </div>
             <div class="form-group">
                 <label for="program-choice">Which program are you interested in:</label>
-                <select name="program-choice" id="dropdown">
+                <select name="program-choice" id="program-choice">
                     <option value="ios-development">iOs Development</option>
                     <option value="web-development">Web Development</option>
                     <option value="machine-learning">Machine Learning</option>
                     <option value="database-admin">Database Administration</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group selection">
                 <p>Starting date:</p>
                 <div class="form-item">
-                    <input type="radio" name="starting-date" id="starting-date" value="september-2020"> September 2020
+                    <label><input type="radio" name="starting-date" value="september-2020"> September 2020</label>
                 </div>
                 <div class="form-item">
-                    <input type="radio" name="starting-date" id="starting-date" value="january-2021"> January 2021
+                    <label><input type="radio" name="starting-date" value="january-2021"> January 2021</label>
                 </div>
                 <div class="form-item"></div>
-                    <input type="radio" name="starting-date" id="starting-date" value="may-2021"> May 2021
+                    <label><input type="radio" name="starting-date" value="may-2021"> May 2021</label>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group selection">
                 <p>What technologies are you interested in? </p>
                 <div class="form-item">
-                    <input type="checkbox" name="technologies" value="python"> Python
+                    <label><input type="checkbox" name="technologies" value="python"> Python</label>
                 </div>
                 <div class="form-item">
-                    <input type="checkbox" name="technologies" value="java"> Java
+                    <label><input type="checkbox" name="technologies" value="java"> Java</label>
                 </div>
                 <div class="form-item">
-                    <input type="checkbox" name="technologies" value="kotlin"> Kotlin
+                    <label><input type="checkbox" name="technologies" value="kotlin"> Kotlin</label>
                 </div>
                 <div class="form-item">
-                    <input type="checkbox" name="technologies" value="javaScript/node"> JavaScript/Node
+                    <label><input type="checkbox" name="technologies" value="javaScript/node"> JavaScript/Node</label>
                 </div>
                 <div class="form-item">
-                    <input type="checkbox" name="technologies" value="swift"> Swift
+                    <label><input type="checkbox" name="technologies" value="swift"> Swift</label>
                 </div>
                 <div class="form-item">
-                    <input type="checkbox" name="technologies" value="docker"> Docker
+                    <label><input type="checkbox" name="technologies" value="docker"> Docker</label>
                 </div>
                 <div class="form-item">
-                    <input type="checkbox" name="technologies" value="api"> APIs
+                    <label><input type="checkbox" name="technologies" value="api"> APIs</label>
                 </div>
                 <div class="form-item">
-                    <input type="checkbox" name="technologies" value="reactjs"> ReactJS
+                    <label><input type="checkbox" name="technologies" value="reactjs"> ReactJS</label>
                 </div>
             </div>
             <div class="form-group">
@@ -79,7 +79,7 @@
                 <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
             </div>
             <div class="form-group">
-                <input type="submit" value="Submit" id="submit">
+                <input class="btn"type="submit" value="Submit" id="submit">
             </div>
         </form>
     </main>
